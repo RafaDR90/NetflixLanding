@@ -1,0 +1,134 @@
+/* Mis Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+
+/* normalize */
+:root{
+    
+    --main-font:'Cuprum';
+    --alternative-font:'sans-serif';
+    --font-size: 62.5%;
+    --line-height: 1.6;
+
+    /* Colores primarios */
+    --netflix-red: #E50914; /* Rojo característico */
+    --netflix-black: #000000; /* Negro para texto y fondos */
+
+    /* Colores secundarios */
+    --netflix-grey: #221F1F; /* Gris oscuro para fondos y elementos */
+    --netflix-white: #FFFFFF; /* Blanco para texto y contrastes */
+
+    /* Colores adicionales (opcionales) */
+    --netflix-light-grey: #B3B3B3; /* Gris claro para textos secundarios */
+    --netflix-dark-red: #B20710; /* Variante oscura del rojo */
+    
+}
+body{
+    overflow-x: hidden;
+    font-family: var(--main-font),var(--alternative-font);
+}
+.fuente__netflix{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800 !important;
+}
+
+.hero{
+  position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/f8c017ab-feb5-44e8-b12b-92eb733d532d/ES-es-20240107-trifectadaily-perspective_alpha_website_small.jpg') center / cover;
+  
+}
+
+div{
+  max-height: 100%;
+}
+
+
+  .navbar-expand-lg {
+    justify-content: space-between
+  }
+  .navbar-nav{
+    flex-direction: row;
+  }
+
+  .bgTransparente{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+  .p-2{
+    padding: 10.5px !important;
+  }
+  .ultimo{
+    position: absolute;
+    bottom: 0;
+  }
+
+  .div-con-gradient {
+    width: 100%;
+    height: 20vh;
+    background-color: rebeccapurple;
+
+    background: rgb(152,1,55);
+    background: radial-gradient(circle, rgba(152,1,55,1) 0%, rgba(68,65,148,1) 67%, rgba(0,3,41,1) 89%);
+}
+
+.secondarySection{
+  height: 70vh;
+}
+video{
+  height: 100%;
+  width: 100%;
+}
+.imgConVideoSize{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.img__container{
+  width: 40vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .secondarySection{
+    flex-direction: column;
+  }
+  .img__container{
+    width: 80vw;
+  }
+  .centradoEnMovil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fs-1 {
+    font-size: calc(1.2rem + 0.5vw)!important;
+  }
+  .fs-4{
+    font-size: calc(1rem + 0.5vw)!important;
+  }
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .secondarySection{
+    flex-direction: column;
+  }
+  .centradoEnMovil{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .fs-1 {
+    font-size: calc(1.2rem + 0.5vw)!important;
+  }
+  .fs-4{
+    font-size: calc(1rem + 0.5vw)!important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
